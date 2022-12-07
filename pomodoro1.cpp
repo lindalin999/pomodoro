@@ -97,17 +97,17 @@ int main(){
 	cout<<"----計時開始請按下鍵盤上的's'----"<<endl;
 	if(getch()=='s'){
 		for(int k=0;k<t;k++){
-			/*工作時間*/ 
+			 
 			for(int i=ssec;i>=0;i--){
         		cout <<"Pomodoro "<<k+1<<"--剩餘時間："<<setw(3)<<i/60<<"："<<setw(2)<<i%60;		//setw函式限制計時器顯示位數 
         		cout << string(100,'\b');        //退格，以免重複印出 
         		Sleep(1000);			 //延遲一秒--每個倒數時間間隔一秒 
     		}
-    		/*登記工作進度*/ 
+    		
     		cout<<"請輸入在這個番茄鐘中你所完成的工作編號：(若無請輸入'0')"<<endl;
     		cin>>finish[k];
     		if(finish[k]!=0) ff++;			//代表當次番茄鐘有完成任務 
-    		/*休息時間*/ 
+    		
     		for(int i=rsec;i>=0;i--){
         		cout <<"Rest time "<<k+1<<"--剩餘時間："<<setw(3)<<i/60<<"："<<setw(2)<<i%60;
         		cout << string(100,'\b');          
