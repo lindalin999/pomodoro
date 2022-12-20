@@ -4,11 +4,11 @@
 using namespace std;
 int main(){
 	
-	float t=0,w;							//t番茄鐘個數 w工作件數 
-	float studytime,resttime;				//宣告每個番茄鐘的工作時長、休息時長
-	float total; 							//total最後完成%數
-	string content[10];						//content欲完成工作內容 
-	int im[10];								//im花費番茄鐘個數
+	float t=0,w;				//t番茄鐘個數 w工作件數 
+	float studytime,resttime;		//宣告每個番茄鐘的工作時長、休息時長
+	float total; 				//total最後完成%數
+	string content[10];			//content欲完成工作內容 
+	int im[10];				//重要程度
 	
 	cout<<"1.設定番茄鐘"<<endl;
 	cout<<"請設定每個番茄鐘的工作時長、休息時長："<<endl;
@@ -20,7 +20,7 @@ int main(){
 	cout<<"2.To-do list"<<endl;
 	cout<<"請輸入工作件數： "; 
 	cin>>w;
-	cout<<"請依編號輸入工作內容、預計花費番茄鐘個數："<<endl;
+	cout<<"請依編號輸入工作內容、重要程度："<<endl;
 	for(int i=0;i<w;i++){
 		cout<<"task "<<i+1<<":";			
 		cin>>content[i]>>im[i];
